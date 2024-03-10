@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://1hvtmenu1tat"]
+
+[ext_resource type="Script" path="res://Gun.cs" id="1_cux88"]
+[ext_resource type="PackedScene" uid="uid://dhv1w0b1dvat4" path="res://Bullet.tscn" id="2_ffbaq"]
+
+[node name="Gun" type="Node2D"]
+script = ExtResource("1_cux88")
+bulletScene = ExtResource("2_ffbaq")

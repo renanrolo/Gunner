@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://m2tlx3253veg"]
+
+[ext_resource type="Script" path="res://Player.cs" id="1_rvi54"]
+[ext_resource type="Texture2D" uid="uid://hjbqhirbqfja" path="res://Art/Blue Triangle.png" id="3_574nl"]
+[ext_resource type="PackedScene" uid="uid://1hvtmenu1tat" path="res://Gun.tscn" id="4_htsnf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gx8r7"]
+size = Vector2(26, 26)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(67, 52)
+script = ExtResource("1_rvi54")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1.35525e-20)
+rotation = 1.5708
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("3_574nl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gx8r7")
+
+[node name="Gun" parent="." instance=ExtResource("4_htsnf")]
+position = Vector2(28, 0)
