@@ -4,11 +4,11 @@ using System;
 public partial class Gun : Node2D
 {
 	[Export]
-	public PackedScene bulletScene;
-	public float bulletSpeed = 500;
-	public float bps = 15f;
-	public float fireRate;
-	public float timeUntilFire = 0f;
+	private PackedScene bulletScene;
+	private float bulletSpeed = 500;
+	private float bps = 15f;
+	private float fireRate;
+	private float timeUntilFire = 0f;
 		
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()

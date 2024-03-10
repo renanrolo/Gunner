@@ -3,8 +3,8 @@ using System;
 
 public partial class Player : CharacterBody2D
 {
-	public const float Speed = 30000.0f;
-	public Gun gun;
+	private const float Speed = 30000.0f;
+	private Gun gun;
 
 	public override void _Ready()
 	{
